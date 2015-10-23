@@ -1,0 +1,11 @@
+FROM applog-base
+
+RUN mkdir -p /opt/service/config
+WORKDIR /opt/service
+ADD src ./src
+ADD model ./model
+ADD package.json ./package.json
+ADD test/integration/config/applogService.config.json ./config/config.json
+
+RUN npm install
+ENTRYPOINT ["npm", "start", "--"]

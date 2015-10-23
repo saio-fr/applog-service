@@ -1,0 +1,17 @@
+{
+  "db": {
+    "dialect": "mysql",
+    "user": "root",
+    "password": "",
+    "host": "db",
+    "port": "3306",
+    "dbname": "test"
+  },
+
+  "ws": {
+    "url": "ws://crossbar:8080",
+    "realm": "test",
+    "authId": "service",
+    "password": "servicepassword"
+  }
+}

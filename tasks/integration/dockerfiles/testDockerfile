@@ -1,0 +1,9 @@
+FROM applog-base
+
+WORKDIR /opt/service
+ADD test/integration/applogService.test.integration.js ./
+ADD test/integration/config/test.config.json ./config.json
+ADD test/integration/config/test.package.json ./package.json
+
+RUN npm install
+ENTRYPOINT ["npm", "test"]

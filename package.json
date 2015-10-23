@@ -1,0 +1,36 @@
+{
+  "name": "@saio/applog-service",
+  "version": "0.0.1",
+  "description": "applog service",
+  "main": "src/main.js",
+  "dependencies": {
+    "@saio/service-runner": "*",
+    "@saio/db-component": "*",
+    "@saio/wsocket-component": "*",
+    "underscore": "*",
+    "when": "*",
+    "moment": "*",
+    "jsesc": "*"
+  },
+  "devDependencies": {
+    "eslint": "~1.3",
+    "jscs": "*",
+    "blue-tape": "*",
+    "tap-spec": "*"
+  },
+  "scripts": {
+    "start": "service-runner src/main.js",
+    "test": "eslint . && jscs .",
+    "test.integration": "bash tasks/test.integration.sh",
+    "test.integration.clean": "bash tasks/test.integration.clean.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:saio-fr/applog-service.git"
+  },
+  "author": "saio",
+  "bugs": {
+    "url": "https://github.com/saio-fr/applog-service/issues"
+  },
+  "homepage": "https://github.com/saio-fr/applog-service"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "@saio/applog-test",
+  "version": "0.0.1",
+  "description": "integration test for applog-service",
+  "main": "applogService.test.integration.js",
+  "dependencies": {
+    "@saio/wsocket-component": "*",
+    "@saio/db-component": "*",
+    "@saio/service-runner": "*",
+    "when": "*",
+    "underscore": "*",
+    "moment": "*",
+    "blue-tape": "*",
+    "tap-spec": "*"
+  },
+  "scripts": {
+    "test": "blue-tape applogService.test.integration.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:saio-fr/applog-service.git"
+  },
+  "author": "Alexis Terrat",
+  "bugs": {
+    "url": "https://github.com/saio-fr/applog-service/issues"
+  },
+  "homepage": "https://github.com/saio-fr/applog-service"
+}
